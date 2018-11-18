@@ -1,26 +1,37 @@
 <!--pages/demo/index.wxml-->
 <view class='goods'>
   <view class='top__bar'>
-    <view class='top__bar--icon'>友书</view>
-    <view class='top__bar--search'>
-      <input placeholder="请输入..."></input>
+    <view class='top__bar--icon'>
+      <image src="{{logo}}"></image>
     </view>
-    <view class='top__bar--filter_icon'>过滤</view>
+    <view class='top__bar--search'>
+      <image src="{{searchLogo}}"></image>
+      <input placeholder="美国队长3：内战"></input>
+    </view>
+    <view class='top__bar--filter_icon'>
+      <image src="{{filterLogo}}"></image>
+    </view>
   </view>
   <view class='tab__bar'>
     <view class='tab__bar--left' style="border-bottom: 10rpx solid {{currentGoodIndex === 0 ? 'orange' : '#fff'}}" bindtap='buy'>买书</view>
     <view class='tab__bar--center' style="border-bottom: 10rpx solid {{currentGoodIndex === 1 ? 'orange' : '#fff'}}" bindtap='borrow'>借书</view>
     <view class='tab__bar--right' style="border-bottom: 10rpx solid {{currentGoodIndex === 2 ? 'orange' : '#fff'}}" bindtap='give'>送书</view>
   </view>
-  <view scroll-y class='goods__list'>
+  <view class='goods__list'>
     <!-- 循环每一个商品项 -->
     <view class='per__good' wx:for="{{goodsList}}" wx:key="*this">
-      <image style='width: 100%;' src='{{item.pic}}'></image>
-      <text>{{item.desc}}</text>
-      <text>{{item.comment}}</text>
-      <text>{{item.user}}</text>
-      <text>{{item.time}}</text>
-      <text>{{item.location}}</text>
+      <image mode="aspectFit" style='width: 100%;' src='{{item.pic}}'></image>
+      <text class="desc--common">{{item.desc}}</text>
+      <text class="comment--common">赞 ({{item.comment}})</text>
+      <view class="line--common"></view>
+      <view class="about__books">
+        <image mode="aspectFit" class='avatar' src='{{item.avatar}}'></image>
+        <view class="info">
+          <text>{{item.name}}</text>
+          <text>{{item.time}}</text>
+          <text>{{item.location}}</text>
+        </view>
+      </view>
     </view>
   </view>
 </view>
