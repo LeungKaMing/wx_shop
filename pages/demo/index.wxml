@@ -1,0 +1,26 @@
+<!--pages/demo/index.wxml-->
+<view class='goods'>
+  <view class='top__bar'>
+    <view class='top__bar--icon'>友书</view>
+    <view class='top__bar--search'>
+      <input placeholder="请输入..."></input>
+    </view>
+    <view class='top__bar--filter_icon'>过滤</view>
+  </view>
+  <view class='tab__bar'>
+    <view class='tab__bar--left' style="border-bottom: 10rpx solid {{currentGoodIndex === 0 ? 'orange' : '#fff'}}" bindtap='buy'>买书</view>
+    <view class='tab__bar--center' style="border-bottom: 10rpx solid {{currentGoodIndex === 1 ? 'orange' : '#fff'}}" bindtap='borrow'>借书</view>
+    <view class='tab__bar--right' style="border-bottom: 10rpx solid {{currentGoodIndex === 2 ? 'orange' : '#fff'}}" bindtap='give'>送书</view>
+  </view>
+  <view scroll-y class='goods__list'>
+    <!-- 循环每一个商品项 -->
+    <view class='per__good' wx:for="{{goodsList}}" wx:key="*this">
+      <image style='width: 100%;' src='{{item.pic}}'></image>
+      <text>{{item.desc}}</text>
+      <text>{{item.comment}}</text>
+      <text>{{item.user}}</text>
+      <text>{{item.time}}</text>
+      <text>{{item.location}}</text>
+    </view>
+  </view>
+</view>
