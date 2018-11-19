@@ -30,12 +30,12 @@
       </view>
     </view>
   </view>
-  <view class="per">
-    <view>
-      <image mode="aspectFit" class='' src='{{bookDetails.avatar}}'></image>
-      <text>我的发布</text>
+  <view class="per" wx:for="{{perList}}" wx:key="*this">
+    <view style="display: flex; align-items: center;">
+      <image mode="aspectFit" style="padding-right: 25rpx;" class='' src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
     </view>
-    <image mode="aspectFit" class='arrow' src='{{bookDetails.avatar}}'></image>
+    <image wx:if="{{item.name !== '设置'}}" mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
   </view>
  
 </view>

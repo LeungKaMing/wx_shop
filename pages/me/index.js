@@ -3,21 +3,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bookDetails: {
-        level: '💎💎💎💎💎',
-        picList: ['../../assets/images/1.png', '../../assets/images/2.png', '../../assets/images/3.png', '../../assets/images/4.png', '../../assets/images/5.png', '../../assets/images/6.png', '../../assets/images/7.png', '../../assets/images/8.png', '../../assets/images/9.png', ],
-        desc: '《无限》（精装版）',
-        comment: '71',
-        avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-        name: '乔纳森',
-        gender: 'male',
-        tag: 'vip',
-        time: '30秒前',
-        publishDate: '2017-11-12 12:20:21',
-        location: '广州',
-        nowPrize: '21',
-        prePrize: '59'
+    perList: [
+      {
+        img: '../../assets/images/send.png',
+        name: '我的发布'
+      },
+      {
+        img: '../../assets/images/download.png',
+        name: '已下架'
+      },
+      {
+        img: '../../assets/images/order.png',
+        name: '我的订单'
+      },
+      {
+        img: '../../assets/images/vip.png',
+        name: '我的会员'
+      },
+      {
+        img: '../../assets/images/wallet.png',
+        name: '我的钱包'
+      },
+      {
+        img: '../../assets/images/collect.png',
+        name: '我的收藏'
+      },
+      {
+        img: '../../assets/images/addr.png',
+        name: '我的地址'
+      },
+      {
+        img: '../../assets/images/settings.png',
+        name: '设置'
       }
+    ],
+    arrowImg: '../../assets/images/goTo.png',
+    bookDetails: {
+      avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+      name: '乔纳森',
+      gender: 'male',
+      tag: 'vip',
+      time: '30秒前'
+    }
   },
 
   /**

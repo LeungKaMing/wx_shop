@@ -175,6 +175,7 @@
   display: inline-block;
   margin-left: 20rpx;
   width: 200rpx;
+  height:60rpx;
   line-height:60rpx;
   font-size:12px;
 }
