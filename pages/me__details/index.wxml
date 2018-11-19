@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="me">
+  <view class="me__user">
+    <view class="me__user--top">
+      <view class="me__user--top--left">
+        <image mode="aspectFit" class='user__avatar' src='{{bookDetails.avatar}}'></image>
+        <view class="user__box">
+          <view class="user__box--top">
+            <text>{{bookDetails.name}}</text>
+            <text>{{bookDetails.gender}}</text>
+            <text>{{bookDetails.tag}}</text>
+          </view> 
+          <view class="user__box--bottom">
+            <text style="text-align: left;">{{bookDetails.time}}</text>
+          </view>
+        </view>
+      </view>
+      <image mode="aspectFit" class='me__user--top--right' src='{{arrowImg}}' bindtap="goToSelf"></image>
+    </view>
+    <view class="me__user--middle">
+      <view class="me__user--middle--left">
+        <text>1</text>
+        <text>赞</text>
+      </view>
+      <view class="me__user--middle--middle">
+        <text>1</text>
+        <text>关注</text>
+      </view>
+      <view class="me__user--middle--right">
+        <text>1</text>
+        <text>粉丝</text>
+      </view>
+    </view>
+  </view>
+  <view class="per" wx:for="{{perList}}" wx:key="*this">
+    <view style="display: flex; align-items: center;">
+      <image mode="aspectFit" style="padding-right: 25rpx;" class='' src='{{item.img}}'></image>
+      <text>{{item.name}}</text>
+    </view>
+    <image wx:if="{{item.name !== '设置'}}" mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
+  </view>
+ 
+</view>
