@@ -1,62 +1,66 @@
 .me {
 }
-.me_user {
-  position: relative;
+.me__user {
   margin-bottom: 10rpx;
   background: #fff;
 }
-.me_user .me_user__top {}
-.me_user .me_user__top--left {
+.me__user .me__user--top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.me_user .me_user__top--right {
+.me__user .me__user--top--left {
+}
+.me__user .me__user--top--right {
   position:absolute;
   right:0;
   top:25rpx;
-  width: 300rpx;
+  width: 50rpx;
   height:50rpx;
   line-height:50rpx;
   font-size:12px;
   background:#fff;
 }
-.me_user .me_user__top--left .user__avatar {
+.me__user .me__user--top--left .user__avatar {
   float: left; 
   width: 100rpx;
   height: 100rpx;
 }
-.me_user .me_user__top--left .user__box {
+.me__user .me__user--top--left .user__box {
   display: flex;
   flex-direction: column;
   font-size: 12px;
 }
 
 /* */
-.me_user__middle {
+.me__user--middle {
   display: flex;
   justify-content: space-around;
   margin-top: 50rpx;
   height: 150rpx;
 }
-.me_user__middle--left {
+.me__user--middle--left {
   width: 100rpx;
   height: 100rpx;
 }
-.me_user__middle--left text {
+.me__user--middle--left text {
   display: block;
   text-align: center;
 }
-.me_user__middle--middle {
+.me__user--middle--middle {
   width: 100rpx;
   height: 100rpx;
 }
-.me_user__middle--middle text {
+.me__user--middle--middle text {
   display: block;
   text-align: center;
 }
-.me_user__middle--right {
+.me__user--middle--right {
   width: 100rpx;
   height: 100rpx;
 }
-.me_user__middle--right text {
+.me__user--middle--right text {
   display: block;
   text-align: center;
 }

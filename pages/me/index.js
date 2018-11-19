@@ -59,5 +59,8 @@ Page({
    */
   onReady: function () {
     console.log(2)
+  },
+  goToSelf () {
+    console.log(arguments, '<<<<<<<<<<<<<<')
   }
 })
