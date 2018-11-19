@@ -26,10 +26,16 @@
       <view class="line--common"></view>
       <view class="about__books">
         <image mode="aspectFit" class='avatar' src='{{item.avatar}}'></image>
-        <view class="info">
-          <text>{{item.name}}</text>
-          <text>{{item.time}}</text>
-          <text>{{item.location}}</text>
+        <view class="info" style="display: flex;flex-direction: column; font-size: 12px;">
+          <view class="info--top" style="display: flex; justify-content: space-between;">
+            <text>{{item.name}}</text>
+            <text>{{item.gender}}</text>
+            <text>{{item.tag}}</text>
+          </view> 
+          <view class="info--bottom" style="display: flex; justify-content: space-between;">
+            <text style="text-align: left;">{{item.time}}</text>
+            <text style="text-align: right;">{{item.location}}</text>
+          </view>
         </view>
       </view>
     </view>

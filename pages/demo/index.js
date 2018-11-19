@@ -13,7 +13,9 @@ Page({
         desc: '《无限》（精装版）',
         comment: '71',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-        name: '乔纳森·希克曼',
+        name: '乔纳森',
+        gender: 'male',
+        tag: 'vip',
         time: '30秒前',
         location: '广州'
       },
@@ -22,7 +24,9 @@ Page({
         desc: '《复仇者联盟3无限战争》电影档案',
         comment: '1907',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-        name: '杰罗姆·奥彭阿',
+        name: '杰罗姆',
+        gender: 'female',
+        tag: '',
         time: '1天前',
         location: '广州'
       },
@@ -31,7 +35,9 @@ Page({
         desc: '灭霸崛起',
         comment: '2321',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-        name: '四川美术出版社',
+        name: '小梁',
+        gender: 'female',
+        tag: '',
         time: '1小时前',
         location: '广州'
       }
@@ -61,7 +67,9 @@ Page({
           desc: '《无限》（精装版）',
           comment: '71',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '乔纳森·希克曼',
+          name: '乔纳森',
+          gender: 'male',
+          tag: 'vip',
           time: '30秒前',
           location: '广州'
         },
@@ -70,7 +78,9 @@ Page({
           desc: '《复仇者联盟3无限战争》电影档案',
           comment: '1907',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '杰罗姆·奥彭阿',
+          name: '杰罗姆',
+          gender: 'female',
+          tag: '',
           time: '1天前',
           location: '广州'
         },
@@ -79,7 +89,9 @@ Page({
           desc: '灭霸崛起',
           comment: '2321',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '四川美术出版社',
+          name: '小梁',
+          gender: 'female',
+          tag: '',
           time: '1小时前',
           location: '广州'
         }
@@ -96,7 +108,9 @@ Page({
           desc: '超人-秘密身份',
           comment: '71',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '乔纳森·希克曼',
+          name: '乔纳森',
+          gender: 'female',
+          tag: '',
           time: '30秒前',
           location: '广州'
         },
@@ -105,7 +119,9 @@ Page({
           desc: '天国降临',
           comment: '1907',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '杰罗姆·奥彭阿',
+          name: '杰罗姆',
+          gender: 'female',
+          tag: '',
           time: '1天前',
           location: '广州'
         },
@@ -114,7 +130,9 @@ Page({
           desc: '无限危机',
           comment: '2321',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '四川美术出版社',
+          name: '小梁',
+          gender: 'male',
+          tag: 'vip',
           time: '1小时前',
           location: '广州'
         }
@@ -131,7 +149,9 @@ Page({
           desc: '零年：黑暗之城',
           comment: '71',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '乔纳森·希克曼',
+          name: '乔纳森',
+          gender: 'female',
+          tag: '',
           time: '30秒前',
           location: '广州'
         },
@@ -140,7 +160,9 @@ Page({
           desc: '灭族之灾',
           comment: '1907',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '杰罗姆·奥彭阿',
+          name: '杰罗姆',
+          gender: 'male',
+          tag: 'vip',
           time: '1天前',
           location: '广州'
         },
@@ -149,7 +171,9 @@ Page({
           desc: '正义联盟',
           comment: '2321',
           avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-          name: '四川美术出版社',
+          name: '小梁',
+          gender: 'female',
+          tag: '',
           time: '1小时前',
           location: '广州'
         }
