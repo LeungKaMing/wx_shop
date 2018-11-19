@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="me">
+  <view class="me_user">
+    <view class="me_user__top--left">
+      <image mode="aspectFit" class='user__avatar' src='{{bookDetails.avatar}}'></image>
+      <view class="user__box">
+        <view class="user__box--top">
+          <text>{{bookDetails.name}}</text>
+          <text>{{bookDetails.gender}}</text>
+          <text>{{bookDetails.tag}}</text>
+        </view> 
+        <view class="user__box--bottom">
+          <text style="text-align: left;">{{bookDetails.time}}</text>
+        </view>
+      </view>
+    </view>
+    <image mode="aspectFit" class='me_user__top--right' src='{{bookDetails.avatar}}'></image>
+    <view class="me_user__middle">
+      <view class="me_user__middle--left">
+        <text>1</text>
+        <text>赞</text>
+      </view>
+      <view class="me_user__middle--middle">
+        <text>1</text>
+        <text>关注</text>
+      </view>
+      <view class="me_user__middle--right">
+        <text>1</text>
+        <text>粉丝</text>
+      </view>
+    </view>
+  </view>
+  <view class="per">
+    <view>
+      <image mode="aspectFit" class='' src='{{bookDetails.avatar}}'></image>
+      <text>我的发布</text>
+    </view>
+    <image mode="aspectFit" class='arrow' src='{{bookDetails.avatar}}'></image>
+  </view>
+ 
+</view>
