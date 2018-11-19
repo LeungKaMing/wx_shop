@@ -179,5 +179,10 @@ Page({
         }
       ]
     })
+  },
+  goToDetail () {
+    wx.navigateTo({
+      url: '../details/index?id=1'
+    })
   }
 })

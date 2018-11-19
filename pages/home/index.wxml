@@ -1,5 +1,5 @@
 <!--pages/demo/index.wxml-->
-<view class='goods'>
+<view class='home'>
   <view class='top__bar'>
     <view class='top__bar--icon'>
       <image src="{{logo}}"></image>
@@ -20,7 +20,7 @@
   <view class='goods__list'>
     <!-- 循环每一个商品项 -->
     <view class='per__good' wx:for="{{goodsList}}" wx:key="*this">
-      <image mode="aspectFit" style='width: 100%;' src='{{item.pic}}'></image>
+      <image mode="aspectFit" style='width: 100%;' src='{{item.pic}}' bindtap="goToDetail"></image>
       <text class="desc--common">{{item.desc}}</text>
       <text class="comment--common">赞 ({{item.comment}})</text>
       <view class="line--common"></view>

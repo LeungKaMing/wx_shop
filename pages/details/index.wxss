@@ -1,0 +1,180 @@
+/* pages/details/index.wxss */
+.details {
+}
+.about_user {
+  position: relative;
+  margin-bottom: 10rpx;
+}
+.about_user .about_user--left {
+}
+.about_user .about_user--right {
+  position:absolute;
+  right:0;
+  top:25rpx;
+  width: 300rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:12px;
+  background:#fff;
+}
+.about_user .about_user--left .user__avatar {
+  float: left; 
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.about_user .about_user--left .user__box {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.about_user .about_user--level {
+  padding-top:20rpx;
+  font-size: 12px;
+}
+
+/* */
+.book__info--tag{
+  display: inline-block;
+  margin-left:20rpx;
+  width:100rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  background: orange;
+  font-size:16rpx;
+  vertical-align:middle;
+}
+.book__info--bottom {
+  position: relative;
+  color: orange;
+  font-size: 12px;
+}
+.book__info--bottom .book__info--prize {
+  font-size: 12px;
+}
+.book__info--bottom .book__info--sale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:300rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:12px;
+  background: orange;
+  color: #fff;
+}
+
+.book__detail--box {
+  margin: 0 50rpx;
+}
+.book__detail--box image{
+  width: 100%;
+}
+
+/**/
+.book__bounds {
+  margin-top:150rpx;
+}
+.book__bounds .book__bounds--icon {
+  margin:0 auto 20rpx;
+  width:150rpx;
+  height:150rpx;
+  line-height:150rpx;
+  background:orange;
+  border-radius:50%;
+  text-align:center;
+  vertical-align:middle;
+  color:#fff;
+}
+.book__bounds .book__bounds--font {
+  display: block;
+  font-size:12px;
+  text-align:center;
+}
+
+/**/
+.book__comment {
+  margin:50rpx 20rpx 0;
+}
+.book__comment .book__comment--line {
+  padding: 10rpx 0;
+  height: 50rpx;
+  border-top: 1px solid #ccc; 
+  border-bottom: 1px solid #ccc; 
+  font-size:12px;
+}
+.book__comment .book__comment--line image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align:middle;
+}
+.book__comment .book__comment--list {
+  margin-top: 20rpx;
+  padding-bottom:4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.book__comment .book__comment--list .user__avatar {
+  float: left; 
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.book__comment .book__comment--list .user__box {
+  display: flex;
+  flex-direction: column;
+  padding-top:10rpx;
+  font-size: 12px;
+}
+.book__comment .book__comment--mention {
+  margin:150rpx auto;
+  color:#ccc;
+  font-size:12px;
+  text-align:center;
+}
+.book__comment .book__comment--add {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10rpx 0;
+  height:100rpx;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  font-size:12px;
+}
+.book__comment .book__comment--add image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align:middle;
+}
+
+/**/
+.book__like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:10rpx;
+  height:100rpx;
+  background:#ccc;
+}
+.book__like .book__like--left {
+  padding-left:30rpx;
+}
+.book__like .book__like--left image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align:middle;
+}
+.book__like .book__like--right {
+  display: flex;
+  padding-right:30rpx;
+  height:25px;
+  text-align:center;
+}
+.book__like .book__like--right button{
+  display: inline-block;
+  margin-left: 20rpx;
+  width: 200rpx;
+  line-height:60rpx;
+  font-size:12px;
+}

@@ -1,0 +1,74 @@
+<!--pages/demo/index.wxml-->
+<view class='details'>
+  <view class="about_user">
+    <view class="about_user--left">
+      <image mode="aspectFit" class='user__avatar' src='{{bookDetails.avatar}}'></image>
+      <view class="user__box">
+        <view class="user__box--top">
+          <text>{{bookDetails.name}}</text>
+          <text>{{bookDetails.gender}}</text>
+          <text>{{bookDetails.tag}}</text>
+        </view> 
+        <view class="user__box--bottom">
+          <text style="text-align: left;">{{bookDetails.time}}</text>
+          <text style="text-align: right;">{{bookDetails.location}}</text>
+        </view>
+      </view>
+    </view>
+    <button class="about_user--right">关注</button>
+    <view class="about_user--level">信用等级:{{bookDetails.level}}</view>
+  </view>
+  <view class="book__info">
+    <view class="book__info--top">
+      <text class="book__info--title">做最好的自己</text>
+      <button class="book__info--tag">HOT!</button>
+      <button class="book__info--tag">评分5.0</button>
+    </view>
+    <view class="book__info--bottom">
+      <view class="book__info--prize">¥<text style="font-size: 16px;">{{bookDetails.nowPrize}} </text><text style="color: #ccc;text-decoration:line-through">原价：{{bookDetails.prePrize}}</text></view>
+      <button class="book__info--sale">会员更优惠</button>
+    </view>
+  </view>
+  <view class="book__detail">
+    <text>【书籍详情】</text>
+    <view class="book__detail--box">
+      <image wx:for="{{bookDetails.picList}}" wx:key="*this" src='{{item}}'></image>
+      <text style="display: block;font-size: 12px; color: #ccc;">中国 北京 朝阳</text>
+      <text style="display: block;font-size: 10px; color: #ccc;">发布于{{bookDetails.publishDate}}</text>
+    </view>
+  </view>
+  <view class="book__bounds">
+    <view class="book__bounds--icon">赏</view>
+    <text class="book__bounds--font">还没有人给Ta打赏，打赏一下Ta吧！</text>
+  </view>
+  <view class="book__comment">
+    <view class="book__comment--line">
+      <image mode="aspectFit" src='https://avatars3.githubusercontent.com/u/18412359?s=40&v=4'></image>
+      全部评论 <text style="color: #ccc;">(共1条评论)</text>
+    </view>
+    <view class="book__comment--list">
+      <image class="user__avatar" mode="aspectFit" src='https://avatars3.githubusercontent.com/u/18412359?s=40&v=4'></image>
+      <view class="user__box">
+        <text style="">尼古拉斯·赵四</text>
+        <text style="">不错哟！</text>
+      </view>
+    </view>
+    <view class="book__comment--mention">
+      没有更多了
+    </view>
+    <view class="book__comment--add">
+      <image mode="aspectFit" src='https://avatars3.githubusercontent.com/u/18412359?s=40&v=4'></image>
+      <input style="width:90%; height: 70rpx;background: #ccc;" placeholder="添加一条评论"></input>
+    </view>
+  </view>
+  <view class="book__like">
+    <view class="book__like--left">
+      <image mode="aspectFit" src='https://avatars3.githubusercontent.com/u/18412359?s=40&v=4'></image>
+      <text style="font-size: 12px;">点赞 (0)</text>
+    </view>
+    <view class="book__like--right">
+      <button style="background: yellow;">聊一聊</button>
+      <button style="background: orange;">立即购买</button>
+    </view>
+  </view>
+</view>

@@ -1,5 +1,5 @@
 /* pages/demo/index.wxss */
-.goods {
+.home {
 }
 .top__bar {
   display: flex;
