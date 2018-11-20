@@ -3,38 +3,70 @@ Page({
    * 页面的初始数据
    */
   data: {
-    perList: [
+    baseInfoList: [
       {
-        img: '../../assets/images/send.png',
-        name: '我的发布'
+        type: 'img',
+        value: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        name: '头像'
       },
       {
-        img: '../../assets/images/download.png',
-        name: '已下架'
+        type: 'str',
+        value: 'Leon',
+        name: '昵称'
       },
       {
-        img: '../../assets/images/order.png',
-        name: '我的订单'
+        type: 'str',
+        value: '保密',
+        name: '性别'
       },
       {
-        img: '../../assets/images/vip.png',
-        name: '我的会员'
+        type: 'str',
+        value: '',
+        name: '生日'
       },
       {
-        img: '../../assets/images/wallet.png',
-        name: '我的钱包'
+        type: 'str',
+        value: '',
+        name: '个性签名'
       },
       {
-        img: '../../assets/images/collect.png',
-        name: '我的收藏'
+        type: 'str',
+        value: '',
+        name: '兴趣爱好'
       },
       {
-        img: '../../assets/images/addr.png',
-        name: '我的地址'
+        type: 'str',
+        value: '',
+        name: '个人说明'
+      }
+    ],
+    moreInfoList: [
+      {
+        type: 'str',
+        value: '',
+        name: '所在位置'
       },
       {
-        img: '../../assets/images/settings.png',
-        name: '设置'
+        type: 'str',
+        value: '',
+        name: '职业'
+      },
+      {
+        type: 'str',
+        value: '保密',
+        name: '情感'
+      }
+    ],
+    restInfoList: [
+      {
+        type: 'str',
+        value: '',
+        name: '兴趣爱好'
+      },
+      {
+        type: 'str',
+        value: '',
+        name: '个人说明'
       }
     ],
     arrowImg: '../../assets/images/goTo.png',

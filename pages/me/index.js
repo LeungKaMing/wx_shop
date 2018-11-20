@@ -61,6 +61,8 @@ Page({
     console.log(2)
   },
   goToSelf () {
-    console.log(arguments, '<<<<<<<<<<<<<<')
+    wx.navigateTo({
+      url: '../me__details/index?id=1'
+    })
   }
 })
