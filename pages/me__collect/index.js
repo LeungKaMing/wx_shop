@@ -74,48 +74,7 @@ Page({
     })
   },
   goTo (e) {
-    const id = Number(e.currentTarget.dataset.id)
-    switch (id) {
-      case 1:
-        wx.navigateTo({
-          url: '../me__publish/index'
-        })
-        break
-      case 2:
-        wx.navigateTo({
-          url: '../me__sellout/index'
-        })
-        break
-      case 3:
-        wx.navigateTo({
-          url: '../me__paybill/index'
-        })
-        break
-      case 4:
-        wx.navigateTo({
-          url: '../me__vip/index'
-        })
-        break
-      case 5:
-        wx.navigateTo({
-          url: '../me__wallet/index'
-        })
-        break
-      case 6:
-        wx.navigateTo({
-          url: '../me__collect/index'
-        })
-        break
-      case 7:
-        wx.navigateTo({
-          url: '../me__addr/index'
-        })
-        break
-      case 8:
-        wx.navigateTo({
-          url: '../me__settings/index'
-        })
-        break
-    }
+    const id = e.currentTarget.dataset.id
+    console.log(id, '<<<<<<<<<<<<<<<')
   }
 })
