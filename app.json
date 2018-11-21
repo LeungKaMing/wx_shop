@@ -4,7 +4,10 @@
     "pages/details/index",
     "pages/me/index",
     "pages/me__details/index",
-    "pages/me__zone/index"
+    "pages/me__zone/index",
+    "pages/friends/index",
+    "pages/issue/index",
+    "pages/message/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,6 +19,15 @@
     "list": [{
       "pagePath": "pages/home/index",
       "text": "首页"
+    }, {
+        "pagePath": "pages/message/index",
+        "text": "消息"
+    }, {
+        "pagePath": "pages/issue/index",
+        "text": "发布"
+    }, {
+        "pagePath": "pages/friends/index",
+        "text": "书友"
     }, {
       "pagePath": "pages/me/index",
       "text": "我"

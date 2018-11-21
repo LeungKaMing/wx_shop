@@ -1,0 +1,21 @@
+<!--pages/message/index.wxml-->
+<view class='message'>
+  <view class='top__bar'>
+    <text>{{messageTitle}}</text>
+  </view>
+  <view class='message__list'>
+    <view class='message__per' wx:for="{{messageList}}" wx:key="*this">
+      <view class='message__per--left'>
+        <image mode="aspectFit" class='message__per--image' src='{{item.avatar}}'></image>
+        <icon class='message__per--icon'></icon>
+      </view>
+      <view class='message__per--middle'>
+        <text class="message__per--name">{{item.name}}</text>
+        <text class="message__per--preview">{{item.preview}}</text>
+      </view>
+      <view class='message__per--right'>
+        <text class="message__per--time">{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+</view>
