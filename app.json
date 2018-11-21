@@ -7,7 +7,15 @@
     "pages/me__zone/index",
     "pages/friends/index",
     "pages/issue/index",
-    "pages/message/index"
+    "pages/message/index",
+    "pages/me__publish/index",
+    "pages/me__sellout/index",
+    "pages/me__paybill/index",
+    "pages/me__vip/index",
+    "pages/me__wallet/index",
+    "pages/me__collect/index",
+    "pages/me__addr/index",
+    "pages/me__settings/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
