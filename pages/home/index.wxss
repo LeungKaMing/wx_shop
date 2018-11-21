@@ -71,15 +71,28 @@
   height: 640rpx;
 }
 .per__good .about__books {
+  display: flex;
+  align-content: center;
   height: 50px;
 }
 .avatar {
-  float: left; 
   width: 100rpx;
   height: 100rpx;
   border-radius: 50%;
 }
-
+.info {
+  display: flex;
+  flex-direction: column; 
+  font-size: 12px;
+}
+.info .info--top {
+  display: flex; 
+  justify-content: space-between;
+}
+.info .info--bottom {
+  display: flex;
+  justify-content: space-between;
+}
 /* common css */
 .desc--common {
   display:block;

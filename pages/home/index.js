@@ -48,14 +48,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(1)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log(2)
   },
   buy() {
     console.log('buy')
@@ -183,6 +181,11 @@ Page({
   goToDetail () {
     wx.navigateTo({
       url: '../details/index?id=1'
+    })
+  },
+  goToZone () {
+    wx.navigateTo({
+      url: '../me__zone/index?id=1'
     })
   }
 })
