@@ -1,0 +1,46 @@
+/* pages/details/index.wxss */
+.me__zone {
+}
+.banner {
+  height: 300rpx;
+}
+
+.me__zone .user__info {
+  display: flex;
+  align-items:center;
+  margin: 80rpx 20rpx 50rpx;
+}
+.me__zone .user__info .user__avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.me__zone .user__info .user__box {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.me__zone .user__foot {
+  margin:0 20rpx;
+}
+.me__zone .user__foot .user__foot--title {
+  margin-bottom:30rpx;
+  border-bottom:1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+.me__zone__info {
+  float: left; 
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}

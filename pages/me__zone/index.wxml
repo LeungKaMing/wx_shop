@@ -1,0 +1,39 @@
+<!--pages/demo/index.wxml-->
+<view class='me__zone'>
+  <view class="banner">
+    <image mode="" style="width: 100%;height: 100%;" class='me__zone__banner' src='{{banner}}'></image>
+  </view>
+  <view class="user__info">
+    <image mode="aspectFit" class='user__avatar' src='{{aboutMe.avatar}}'></image>
+    <view class="user__box">
+      <view class="user__box--top">
+        <text>{{aboutMe.name}}</text>
+        <text>{{aboutMe.gender}}</text>
+        <text>{{aboutMe.tag}}</text>
+      </view> 
+      <view class="user__box--bottom">
+        <text style="text-align: left;">{{aboutMe.time}}</text>
+        <text style="text-align: right;">{{aboutMe.location}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="user__foot">
+    <view class="user__foot--title">
+      <text>动态</text>
+    </view>
+    <view class="user__foot--list" style="display: flex; justify-content: space-between;">
+      <view class="user__foot--per" style="display:flex;flex-direction:column;width: 200rpx;height: 200rpx;">
+        <image mode="" style="width: 100%;height: 100%;" class='me__zone__banner' src='{{banner}}'></image>
+        <text style="font-size: 12px;">做最好的自己</text>
+      </view>
+      <view class="user__foot--per" style="display:flex;flex-direction:column;width: 200rpx;height: 200rpx;">
+        <image mode="" style="width: 100%;height: 100%;" class='me__zone__banner' src='{{banner}}'></image>
+        <text style="font-size: 12px;">做最好的自己</text>
+      </view>
+      <view class="user__foot--per" style="display:flex;flex-direction:column;width: 200rpx;height: 200rpx;">
+        <image mode="" style="width: 100%;height: 100%;" class='me__zone__banner' src='{{banner}}'></image>
+        <text style="font-size: 12px;">做最好的自己</text>
+      </view>
+    </view>
+  </view>
+</view>
