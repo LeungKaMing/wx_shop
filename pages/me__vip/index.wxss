@@ -1,86 +1,42 @@
-.me {
+.me__vip {
 }
-.me__user {
-  margin-bottom: 10rpx;
-  background: #fff;
+.me__vip--top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom:10rpx;
+  height:120rpx;
 }
-.me__user .me__user--top {
-  position: relative;
+.me__vip--top image {
+  padding-right:20rpx;
+  width:100rpx;
+  height: 100%;
+}
+.me__vip--middle {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+.me__vip--middle--per {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:350rpx;
+  height:100rpx;
+  border:1px solid #ccc;
+  border-radius:15rpx;
+}
+.me__vip--middle--per image{
+  width:50rpx;
+  height:100%;
+}
+.me__vip--bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top:20rpx;
 }
-.me__user .me__user--top--left {
-}
-.me__user .me__user--top--right {
-  position:absolute;
-  right:0;
-  top:25rpx;
-  width: 50rpx;
-  height:50rpx;
-  line-height:50rpx;
-  font-size:12px;
-  background:#fff;
-}
-.me__user .me__user--top--left .user__avatar {
-  float: left; 
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user .me__user--top--left .user__box {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-}
-
-/* */
-.me__user--middle {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50rpx;
-  height: 150rpx;
-}
-.me__user--middle--left {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--left text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--middle {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--middle text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--right {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--right text {
-  display: block;
-  text-align: center;
-}
-
-/* */
-.per {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30rpx;
-  height: 100rpx;
-  line-height: 100rpx;
-  border-bottom: 1px solid #ccc;
-}
-.per image{
-  float: left; 
-  width: 50rpx;
-  height: 50rpx;
-}
-.per .arrow {
+.arrow {
   float: right;
   width: 50rpx;
   height: 50rpx;
