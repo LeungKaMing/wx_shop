@@ -1,4 +1,30 @@
 <!--index.wxml-->
-<view class="me">
- 
+<view class="me__wallet">
+    <view class="me__wallet--top">
+        <view class="me__wallet--top__money">
+            <text >钱包余额</text>
+            <view class="money__input">
+                <text>￥</text>
+                <input style="font-size: 28px;" placeholder-style="font-size: 28px;" type="digit" placeholder="带小数点的数字键盘"/>
+            </view>
+        </view>
+        <view class="me__wallet--top__opts">
+            <view class="per">
+                <image class="icon" mode="aspectFit" src='{{detailsImg}}'></image>
+                <text >账单明细</text>
+            </view>
+            <view class="per">
+                <image class="icon" mode="aspectFit" src='{{withdrawImg}}'></image>
+                <text >提现</text>
+            </view>
+        </view>
+    </view>
+    <view class="me__wallet--center">
+        <text >账户</text>
+        <image class="arrow" mode="aspectFit" src='{{arrowImg}}'></image>
+    </view>
+    <view class="me__wallet--bottom">
+        <text >设置支付密码</text>
+        <image class="arrow" mode="aspectFit" src='{{arrowImg}}'></image>
+    </view>
 </view>
