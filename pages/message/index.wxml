@@ -4,7 +4,7 @@
     <text>{{messageTitle}}</text>
   </view>
   <view class='message__list'>
-    <view class='message__per' wx:for="{{messageList}}" wx:key="*this">
+    <view class='message__per' wx:for="{{messageList}}" wx:key="*this" bindtap="goTo" data-id="{{item.id}}">
       <view class='message__per--left'>
         <image mode="aspectFit" class='message__per--image' src='{{item.avatar}}'></image>
         <icon class='message__per--icon'></icon>

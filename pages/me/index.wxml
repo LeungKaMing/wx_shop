@@ -32,8 +32,8 @@
       </view>
     </view>
   </view>
-  <view class="per" wx:for="{{perList}}" wx:key="*this">
-    <view style="display: flex; align-items: center;" data-id="{{item.id}}" bindtap="goTo">
+  <view class="per" wx:for="{{perList}}" wx:key="*this" bindtap="goTo">
+    <view style="display: flex; align-items: center;" data-id="{{item.id}}">
       <image mode="aspectFit" style="padding-right: 25rpx;" class='' src='{{item.img}}'></image>
       <text>{{item.name}}</text>
     </view>

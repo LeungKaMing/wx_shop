@@ -11,7 +11,7 @@ Page({
         preview: '喜欢就下单吧就下单吧就下单吧就下就下吧就下就下吧就下就下吧就下就下吧就下就下单吧',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
         name: '铭哥',
-        gender: 'male',
+        id: 1,
         icon: true,
         time: '2018-11-11 11:11:11',
         location: '广州'
@@ -20,7 +20,7 @@ Page({
         preview: '喜欢就下单吧',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
         name: '铭哥',
-        gender: 'male',
+        id: 2,
         icon: true,
         time: '2018-11-11 11:11:11',
         location: '广州'
@@ -29,14 +29,16 @@ Page({
         preview: '喜欢就下单吧',
         avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
         name: '铭哥3号',
-        gender: 'male',
+        id: 3,
         icon: true,
         time: '2018-11-11 11:11:11',
         location: '广州'
       }
       ]
   },
-
+  goTo(e) {
+    console.log(e.currentTarget.dataset.id);
+  },
   /**
    * 生命周期函数--监听页面加载
    */

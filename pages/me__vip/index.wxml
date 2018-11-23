@@ -1,4 +1,17 @@
 <!--index.wxml-->
-<view class="me">
- 
+<view class="me__vip">
+    <view class="me__vip--top">
+        <image mode="aspectFit" src='{{avatar}}'></image>
+        <text class="">Leon</text>
+    </view>
+    <view class="me__vip--middle">
+        <view class="me__vip--middle--per"  wx:for="{{vipList}}" wx:key="*this">
+            <image mode="aspectFit" src='{{item.icon}}'></image>
+            <text class="">{{item.text}}</text>
+        </view>
+    </view>
+    <view class="me__vip--bottom">
+        <text >了解会员特权</text>
+        <image class="arrow" mode="aspectFit" src='{{arrowImg}}'></image>
+    </view>
 </view>
