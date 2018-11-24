@@ -1,4 +1,28 @@
 <!--index.wxml-->
-<view class="me">
- 
+<view class="me__addr">
+    <view class="me__addr--top" wx:for="{{addList}}" wx:key="*this">
+        <view class="me__addr__info">
+            <text >{{item.name}}</text>
+            <text >{{item.phone}}</text>
+        </view>
+        <view class="me__addr__details">
+            <text >{{item.addr}}</text>
+        </view>
+        <view class="me__addr__opts" style="display: {{item.checked ? 'flex' : ''}}; justify-content: {{item.checked ? 'space-between' : ''}};">
+            <view wx:if="{{item.checked}}">
+                <button disabled="true">默认</button>
+            </view>
+            <view class="me__addr__opts--bottom">
+                <view>
+                    <image class="icon" src="{{editImg}}" />
+                    <text >编辑</text>
+                </view>
+                <view>
+                    <image class="icon" src="{{delImg}}" />
+                    <text >删除</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <button class="add__addr">添加新地址</button>
 </view>

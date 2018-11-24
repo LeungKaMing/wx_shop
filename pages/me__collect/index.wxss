@@ -1,86 +1,38 @@
-.me {
+.me__collect {
 }
-.me__user {
-  margin-bottom: 10rpx;
-  background: #fff;
-}
-.me__user .me__user--top {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.me__user .me__user--top--left {
-}
-.me__user .me__user--top--right {
-  position:absolute;
-  right:0;
-  top:25rpx;
-  width: 50rpx;
-  height:50rpx;
-  line-height:50rpx;
-  font-size:12px;
-  background:#fff;
-}
-.me__user .me__user--top--left .user__avatar {
-  float: left; 
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user .me__user--top--left .user__box {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-}
-
-/* */
-.me__user--middle {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50rpx;
-  height: 150rpx;
-}
-.me__user--middle--left {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--left text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--middle {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--middle text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--right {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--right text {
-  display: block;
-  text-align: center;
-}
-
-/* */
-.per {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30rpx;
-  height: 100rpx;
-  line-height: 100rpx;
+.me__collect__per--title {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom: 20rpx;
+  height:100rpx;
   border-bottom: 1px solid #ccc;
 }
-.per image{
-  float: left; 
-  width: 50rpx;
-  height: 50rpx;
+.me__collect__per--swipe {
+  height: 200rpx;
+  border-bottom: 1px solid #ccc;
 }
-.per .arrow {
+.me__collect__per--swipe__item {
+  display: flex;
+}
+.me__collect__per--swipe__item--content {
+  display: flex;
+  flex-direction:column;
+  align-content:center;
+  justify-content: space-between;
+  align-items: center;
+}
+.me__collect__per--operation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+}
+.like__btn {
+  margin-left:30rpx;
+  padding:5rpx 20rpx;
+  border:1px #333 solid;
+}
+.arrow {
   float: right;
   width: 50rpx;
   height: 50rpx;

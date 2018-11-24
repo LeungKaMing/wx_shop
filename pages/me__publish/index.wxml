@@ -1,75 +1,21 @@
 <!--index.wxml-->
 <view class="me__publish">
- <view class="me__publish__per">
+ <view class="me__publish__per" wx:for="{{perList}}" wx:key="*this" wx:for-item="item">
     <view class="me__publish__per--title">
-        <text>买书</text>
+        <text>{{item.title}}</text>
         <image mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
     </view>
     <view class="me__publish__per--list">
         <swiper class="me__publish__per--swipe" next-margin="300rpx">
-            <block wx:for="{{imgUrls}}" wx:key="*this">
+            <block wx:for="{{item.imgUrls}}" wx:key="*this" wx:for-item="item2">
                 <swiper-item class="me__publish__per--swipe__item">
-                    <image src="{{item}}" class="slide-image" style="width: 150rpx;height: 100%;"/>
+                    <image src="{{item2.url}}" class="slide-image" style="width: 150rpx;height: 100%;"/>
                     <view class="me__publish__per--swipe__item--content">
-                        <text >厚黑学</text>
-                        <text >￥21</text>
+                        <text >{{item2.name}}</text>
+                        <text >￥{{item2.prize}}</text>
                         <view>
-                            <text>留言 0</text>
-                            <text>浏览 0</text>
-                        </view>
-                    </view>
-                </swiper-item>
-            </block>
-        </swiper>
-    </view>
-    <view class="me__publish__per--operation">
-        <text class="like__btn">下架</text>
-        <text class="like__btn">...</text>
-    </view>
- </view>
- <view class="me__publish__per">
-    <view class="me__publish__per--title">
-        <text>借书</text>
-        <image mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
-    </view>
-    <view class="me__publish__per--list">
-        <swiper class="me__publish__per--swipe" next-margin="300rpx">
-            <block wx:for="{{imgUrls}}" wx:key="*this">
-                <swiper-item class="me__publish__per--swipe__item">
-                    <image src="{{item}}" class="slide-image" style="width: 150rpx;height: 100%;"/>
-                    <view class="me__publish__per--swipe__item--content">
-                        <text >厚黑学</text>
-                        <text >￥21</text>
-                        <view>
-                            <text>留言 0</text>
-                            <text>浏览 0</text>
-                        </view>
-                    </view>
-                </swiper-item>
-            </block>
-        </swiper>
-    </view>
-    <view class="me__publish__per--operation">
-        <text class="like__btn">下架</text>
-        <text class="like__btn">...</text>
-    </view>
- </view>
- <view class="me__publish__per">
-    <view class="me__publish__per--title">
-        <text>送书</text>
-        <image mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
-    </view>
-    <view class="me__publish__per--list">
-        <swiper class="me__publish__per--swipe" next-margin="300rpx">
-            <block wx:for="{{imgUrls}}" wx:key="*this">
-                <swiper-item class="me__publish__per--swipe__item">
-                    <image src="{{item}}" class="slide-image" style="width: 150rpx;height: 100%;"/>
-                    <view class="me__publish__per--swipe__item--content">
-                        <text >厚黑学</text>
-                        <text >￥21</text>
-                        <view>
-                            <text>留言 0</text>
-                            <text>浏览 0</text>
+                            <text>留言 {{item2.comment}}</text>
+                            <text>浏览 {{item2.view}}</text>
                         </view>
                     </view>
                 </swiper-item>

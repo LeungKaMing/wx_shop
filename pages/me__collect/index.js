@@ -5,54 +5,85 @@ Page({
   data: {
     perList: [
       {
-        id: 1,
-        img: '../../assets/images/send.png',
-        name: '我的发布'
+        title: '买书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
       },
       {
-        id: 2,
-        img: '../../assets/images/download.png',
-        name: '已下架'
+        title: '送书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
       },
       {
-        id: 3,
-        img: '../../assets/images/order.png',
-        name: '我的订单'
-      },
-      {
-        id: 4,
-        img: '../../assets/images/vip.png',
-        name: '我的会员'
-      },
-      {
-        id: 5,
-        img: '../../assets/images/wallet.png',
-        name: '我的钱包'
-      },
-      {
-        id: 6,
-        img: '../../assets/images/collect.png',
-        name: '我的收藏'
-      },
-      {
-        id: 7,
-        img: '../../assets/images/addr.png',
-        name: '我的地址'
-      },
-      {
-        id: 8,
-        img: '../../assets/images/settings.png',
-        name: '设置'
+        title: '借书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
       }
     ],
-    arrowImg: '../../assets/images/goTo.png',
-    bookDetails: {
-      avatar: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
-      name: '乔纳森',
-      gender: 'male',
-      tag: 'vip',
-      time: '30秒前'
-    }
+    arrowImg: '../../assets/images/goTo.png'
   },
 
   /**
