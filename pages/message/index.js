@@ -37,13 +37,21 @@ Page({
       ]
   },
   goTo(e) {
-    console.log(e.currentTarget.dataset.id);
+    console.log('聊天页面带来的ID:' + e.currentTarget.dataset.id);
+    console.log(e.currentTarget.dataset)
+    var currentId = e.currentTarget.dataset.id,
+    currentName = e.currentTarget.dataset.name,
+    currentAvatar = e.currentTarget.dataset.avatar
+    
+    wx.navigateTo({
+      url: '../message__chat/index?id=' + currentId + '&name=' + currentName + '&avatar=' + currentAvatar
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

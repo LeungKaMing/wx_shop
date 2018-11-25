@@ -5,14 +5,78 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    messageChatTitle: '铭哥',
+    goodName: '时间简史',
+    goodPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+    goodPrice: '21',
+    goodDesc: '二手书',
+    messageList: [
+      {
+        time: '2018-11-11 22:22:34',
+        userName: '铭哥',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '在么？',
+        messageState: true,
+        userClass: 'left'
+      },
+      {
+        time: '2018-11-11 22:22:45',
+        userName: '我',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '在啊！',
+        messageState: true,
+        userClass: 'right'
+      },
+      {
+        time: '2018-11-11 22:22:45',
+        userName: '我',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！吃没有吃饭！',
+        messageState: true,
+        userClass: 'right'
+      },
+      {
+        time: '2018-11-11 22:23:34',
+        userName: '铭哥',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '在干嘛？',
+        messageState: true,
+        userClass: 'left'
+      },
+      {
+        time: '2018-11-11 22:23:34',
+        userName: '铭哥',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多',
+        messageState: true,
+        userClass: 'left'
+      },
+      {
+        time: '2018-11-11 22:23:34',
+        userName: '铭哥',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多',
+        messageState: true,
+        userClass: 'left'
+      },
+      {
+        time: '2018-11-11 22:23:34',
+        userName: '铭哥',
+        userPhoto: 'https://avatars3.githubusercontent.com/u/18412359?s=40&v=4',
+        userMessage: '说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多说了那么多',
+        messageState: true,
+        userClass: 'left'
+      }
+    ]
   },
-
+  checkEvaluate: function (e) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
   },
 
   /**

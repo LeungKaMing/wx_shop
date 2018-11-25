@@ -14,4 +14,5 @@
         <text >了解会员特权</text>
         <image class="arrow" mode="aspectFit" src='{{arrowImg}}'></image>
     </view>
+    <button class="submit__btn">立即开通</button>
 </view>

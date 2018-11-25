@@ -41,3 +41,13 @@
   width: 50rpx;
   height: 50rpx;
 }
+.submit__btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:0 5% 50rpx;
+  height:100rpx;
+  background: yellowgreen;
+  color: #fff;
+}

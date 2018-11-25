@@ -1,4 +1,29 @@
 <!--index.wxml-->
-<view class="me">
- 
+<view class="me__collect">
+ <view class="me__collect__per" wx:for="{{perList}}" wx:key="*this" wx:for-item="item">
+    <view class="me__collect__per--title">
+        <text>{{item.title}}</text>
+        <image mode="aspectFit" class='arrow' src='{{arrowImg}}'></image>
+    </view>
+    <view class="me__collect__per--list">
+        <swiper class="me__collect__per--swipe" next-margin="300rpx">
+            <block wx:for="{{item.imgUrls}}" wx:key="*this" wx:for-item="item2">
+                <swiper-item class="me__collect__per--swipe__item">
+                    <image src="{{item2.url}}" class="slide-image" style="width: 150rpx;height: 100%;"/>
+                    <view class="me__collect__per--swipe__item--content">
+                        <text >{{item2.name}}</text>
+                        <text >￥{{item2.prize}}</text>
+                        <view>
+                            <text>留言 {{item2.comment}}</text>
+                            <text>浏览 {{item2.view}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="me__collect__per--operation">
+        <text class="like__btn">取消收藏</text>
+    </view>
+ </view>
 </view>

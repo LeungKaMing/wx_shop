@@ -1,86 +1,41 @@
-.me {
+.me__wallet {
 }
-.me__user {
-  margin-bottom: 10rpx;
-  background: #fff;
-}
-.me__user .me__user--top {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.me__user .me__user--top--left {
-}
-.me__user .me__user--top--right {
-  position:absolute;
-  right:0;
-  top:25rpx;
-  width: 50rpx;
-  height:50rpx;
-  line-height:50rpx;
-  font-size:12px;
-  background:#fff;
-}
-.me__user .me__user--top--left .user__avatar {
-  float: left; 
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user .me__user--top--left .user__box {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-}
-
-/* */
-.me__user--middle {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50rpx;
-  height: 150rpx;
-}
-.me__user--middle--left {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--left text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--middle {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--middle text {
-  display: block;
-  text-align: center;
-}
-.me__user--middle--right {
-  width: 100rpx;
-  height: 100rpx;
-}
-.me__user--middle--right text {
-  display: block;
-  text-align: center;
-}
-
-/* */
-.per {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30rpx;
-  height: 100rpx;
-  line-height: 100rpx;
+.me__wallet--top__money {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  height:150rpx;
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
 }
-.per image{
+.me__wallet--top__money .money__input {
+  display: flex;
+  padding-top:10rpx;
+}
+.me__wallet--top__opts {
+  display:flex;
+}
+.me__wallet--top__opts .per{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:200rpx;
+}
+.me__wallet--center {
+  margin-top: 20rpx;
+}
+.me__wallet--bottom {
+  margin-top: 20rpx;
+}
+/**/
+.icon{
   float: left; 
-  width: 50rpx;
-  height: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
-.per .arrow {
+.arrow {
   float: right;
   width: 50rpx;
   height: 50rpx;

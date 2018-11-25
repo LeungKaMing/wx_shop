@@ -1,2 +1,44 @@
 <!--pages/message__chat/index.wxml-->
-<text>pages/message__chat/index.wxml</text>
+<view class='message__chat'>
+  <view class='top__bar'>
+    <text>{{messageChatTitle}}</text>
+  </view>
+  <view class='good__message'>
+      <view class='good__message--left'>
+          <image src="{{goodPhoto}}" />
+      </view>
+      <view class='good__message--middle'>
+          <view class='good__message--name'>{{goodName}}</view>
+          <view class='good__message--price'>{{goodPrice}}</view>
+      </view>
+      <view class='good__message--right'>
+          <view class='good__message--desc'>{{goodDesc}}</view>
+          <button class='good__message--button' type="default" size="defaultSize" bindtap="checkEvaluate" hover-class="defaultTap">查看评价</button>
+      </view>
+  </view>
+  <view class='chat__message--list'>
+      <view class='chat__message--item' wx:for="{{messageList}}" wx:key="*this">
+          <view class='chat__message--avatar {{item.userClass}}'>
+              <image mode="aspectFit" class='message__item--image' src='{{item.userPhoto}}'></image>
+          </view>
+          <view class='chat__message--text {{item.userClass}}'>
+              <text class="message__item--text">{{item.userMessage}}</text>
+          </view>
+      </view>
+  </view>
+  <view class='chat__message--send'>
+      <view class='chat__message--more'>
+        <image src="../../assets/images/消息/图层695@3x.png" />
+      </view>
+      <view class='chat__message--input'>
+          <input type="" placeholder="输入聊天信息" auto-focus />
+      </view>
+      <view class='chat__message--emoji'>
+        <image src="../../assets/images/消息/图层696@3x.png" />
+      </view>
+      <view class='chat__message--file'>
+        <image src="../../assets/images/消息/图层697@3x.png" />
+      </view>
+  </view>
+</view>
+

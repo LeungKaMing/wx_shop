@@ -3,10 +3,85 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../assets/images/1.png',
-      '../../assets/images/2.png',
-      '../../assets/images/3.png'
+    perList: [
+      {
+        title: '买书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
+      },
+      {
+        title: '送书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
+      },
+      {
+        title: '借书',
+        imgUrls: [
+          {
+            url: '../../assets/images/1.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/2.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          },
+          {
+            url: '../../assets/images/3.png',
+            name: '厚黑学',
+            prize: '21',
+            comment: '0',
+            view: '0'
+          }
+        ]
+      }
     ],
     arrowImg: '../../assets/images/goTo.png'
   },
