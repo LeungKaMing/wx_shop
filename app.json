@@ -15,7 +15,8 @@
     "pages/me__wallet/index",
     "pages/me__collect/index",
     "pages/me__addr/index",
-    "pages/me__settings/index"
+    "pages/me__settings/index",
+    "pages/message__chat/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,21 +25,27 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/index",
-      "text": "首页"
-    }, {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
         "pagePath": "pages/message/index",
         "text": "消息"
-    }, {
+      },
+      {
         "pagePath": "pages/issue/index",
         "text": "发布"
-    }, {
+      },
+      {
         "pagePath": "pages/friends/index",
         "text": "书友"
-    }, {
-      "pagePath": "pages/me/index",
-      "text": "我"
-    }]
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我"
+      }
+    ]
   }
 }

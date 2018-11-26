@@ -43,14 +43,14 @@
   border-radius:50%;
 }
 .message__per--middle {
-  padding: 25rpx 0;
+  padding:25rpx 0;
   height: 100rpx;
   width: 60%;
   float: left;
   overflow:hidden;
   text-overflow:ellipsis;
   display:-webkit-box;
-  -webkit-line-clamp:2;
+  -webkit-line-clamp:1;
   -webkit-box-orient:vertical;
 }
 .message__per--middle .message__per--name {
@@ -60,6 +60,7 @@
 .message__per--middle .message__per--preview {
   font-size: 26rpx;
   color: #707070;
+  overflow:hidden;
 }
 .message__per--right {
   padding: 25rpx 0;
